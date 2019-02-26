@@ -1,4 +1,9 @@
 body {
+  text-align: center;
  background-image: url("https://bennettfeely.com/gradients/img/gradient.jpg");
  background-color: #cccccc;
+}
+
+.nav{
+  list-style-type: none;
 }
