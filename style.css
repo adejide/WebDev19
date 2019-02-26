@@ -1,0 +1,35 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: ;
+    border-radius: 50px;
+    background-color: aquamarine;
+}
+
+li a:hover {
+    background-color: bisque;
+      color: green;
+}
+
+.navfont {
+    font-style: verdana
+}
+
+#center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.unline {
+  text-decoration: underline;
+}
+
+#drinks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
