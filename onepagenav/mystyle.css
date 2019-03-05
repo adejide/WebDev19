@@ -1,0 +1,79 @@
+.navigators {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+.navigators li {
+  display: inline;
+  padding: 30px;
+}
+
+.navigators a { /*a after class identifies that it will affect the link text*/
+  color: white;
+  text-decoration: none; /* makes the underline for link go away*/
+  font-style: italic;
+}
+
+#navigators {
+  height: 50px;
+  background-image: linear-gradient(to right, red, yellow); /*gradient added to background of nav bar*/
+}
+
+#navigators { /* only affects the navigation bar*/
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#one {
+  background-color: #FFCC75;
+  height: 200px;
+  padding: 50px 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#two {
+  background-color: #00EAFF;
+  height: 200px;
+  padding: 50px 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#three {
+  background-color: #0CE899;
+  height: 200px;
+  padding: 50px 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+#four {
+  background-color: #D900FF;
+  height: 200px;
+  padding: 50px 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+div {
+  color: white;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
