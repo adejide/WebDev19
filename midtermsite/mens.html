@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Get Fit</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .mySlides {display:none;}
+  </style>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="mystyle.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body id=bckclr>
+      <header class=menheader><a href="index.html"<h1>Get Your Fit Together <i>Men</i></h1></a></header> <!--important that link back to homepage is there (index.html)*-->
+      <br>
+      <br>
+      <br>
+      <h2 class=menheader2>Start Curating Your Fits Below</h2>
+      <br>
+      <div class="mtops-container"> <!--top gallery of page-->
+        <img class="mentops" src="burberry.jpg" style="width:100%">
+        <img class="mentops" src="rokit.jpg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+      </div>
+      <!--the javascript for the slideshows/gallery is from: w3schools.com-->
+      <div class="mbottoms-container"> <!--bottom gallery of page-->
+        <img class="menbottoms" src="menjeans.jpg" style="width:100%">
+        <img class="menbottoms" src="baggypants.jpg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button> <!--the second parameter needs a different number for the second gallery-->
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+      </div>
+
+      <script>
+      var slideIndex = [1,1];
+      var slideId = ["mentops", "menbottoms"]
+      showDivs(1, 0);
+      showDivs(1, 1);
+
+      function plusDivs(n, no) {
+        showDivs(slideIndex[no] += n, no);
+      }
+
+      function showDivs(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+      }
+      </script>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
