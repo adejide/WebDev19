@@ -1,0 +1,53 @@
+#container {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+fills {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+  transition: 0.3s;
+}
+
+fills:hover {
+  opacity: 0.5;
+  background-color: gold; /*won't work for some reason*/
+}
+
+.text {
+  background-color: grey;
+  text-align: center;
+  font-size: 20px;
+  grid-row: 1;
+  grid-column: 1/4;
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+
+#inbetween {
+  background-color: beige;
+}
+
+#inbetween2 {
+  background-color: maroon;
+}
+
+.text2 {
+  background-color: grey;
+  text-align: center;
+  font-size: 20px;
+  grid-row: 3;
+  grid-column: 1/4;
+  margin-top: 80px;
+  padding-top: 40px;
+}
+
+.col-5 {
+  color: white;
+}
