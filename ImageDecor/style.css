@@ -1,0 +1,13 @@
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: lightblue;
+  opacity: 50%;
+}
+
+#clicker {
+  color: blue;
+  opacity: 50%;
+}
