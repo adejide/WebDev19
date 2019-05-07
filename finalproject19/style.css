@@ -1,0 +1,129 @@
+.threepages {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 50px; */
+}
+
+.threepages a {
+  display: inline;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: monospace;
+  color: red;
+  /* padding: 20px; */
+}
+
+#work {
+  margin-bottom: 10px;
+}
+
+#about {
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-bottom: 10px;
+}
+
+.D {
+  margin: 0;
+  display: none;
+}
+
+.C {
+  margin: 0;
+  float: right;
+  display: none;
+}
+
+.DCarson {
+  size: 50%;
+}
+
+
+.secondpage {
+  column-count: 3;
+  column-gap: 1/3;
+}
+
+#columns {
+  height: 100%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+h2 {
+  font-family: monospace;
+  color: red; 
+}
+
+.thirdpage {
+  background-image: url("DCarson.jpeg");
+  margin-top: 180px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.item1 {
+grid-area: header;
+border-box: 50px 40px;
+grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+
+.item2 {
+grid-area: auto;
+grid-column: 3 / span 2;
+grid-row: 3 / 4;
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 5;
+}
+
+.item3 {
+border: 50px 20px;
+grid-column-start: 3;
+grid-column-end: 5;
+}
+
+.item4 {
+border: 50px 20px;
+grid-template-columns: auto;
+grid-template-rows: auto;
+}
+
+#clients {
+  font-size: 30px;
+  font-family: monospace;
+}
+
+#slides {
+  width: 100%;
+  height: 100%;
+}
+
+#work {
+  font-size: 30px;
+  font-family: monospace;
+  display: inline-block;
+  text-align: center;
+}
